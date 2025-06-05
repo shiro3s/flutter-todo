@@ -50,7 +50,6 @@ class _TodoListPageState extends State<TodoListPage> {
 
   void _addTodo() {
     final text = _controller.text.trim();
-    print(text);
     if (text.isNotEmpty) {
       setState(() {
         _todos.add(TodoItem(title: text));
